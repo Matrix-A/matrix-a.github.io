@@ -1,9 +1,5 @@
----
-title: "关于"
-date: 2023-07-22T00:47:39+08:00
-draft: false
+# 关于
 
----
 
 # Matrix-A
 
