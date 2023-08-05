@@ -52,9 +52,29 @@ $$
 G_{n} = \begin{cases}
     2 & n=1 \\\\
     8 & n=2 \\\\
-    G_{n-1} + G_{n-2} & n>2
+    4*G_{n-1} + G_{n-2} & n>2
 \end{cases}
 $$
+
+# 参考代码
+
+```C++
+std::uint64_t even_fibonacci(std::uint64_t max) {
+    std::uint64_t a{ 2 };
+    std::uint64_t b{ 8 };
+    std::uint64_t c{ 4 * b + a };
+    std::uint64_t sum{ 0 };
+    if (a < max) sum += a;
+    if (b < max) sum += b;
+    while (c < max) {
+        sum += c;
+        a = b;
+        b = c;
+        c = 4 * b + a;
+    }
+    return sum;
+}
+```
 
 <div class="hide">
 
