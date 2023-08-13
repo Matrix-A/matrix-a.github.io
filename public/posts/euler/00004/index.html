@@ -4,33 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>第3题: 最大质因数 - Matrix-A</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="第3题: 最大质因数" />
-<meta property="og:description" content="题目 最大素因数 $13195$ 的素因数是 $5,7,13$ 和 $29$。 那么 $600851475143$ 的最大素因数是多少？ Largest Prime Factor The prime factors of $13195$ are $5,7,13$ and $29$ . What is the largest prime factor of the number $600851475143$ ? 解题方法 试除法 已知正整数 $n=600851475143$" />
+        <title>第4题: 最大的回文乘积 - Matrix-A</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="第4题: 最大的回文乘积" />
+<meta property="og:description" content="题目 最大的回文乘积 回文数就是正反两边读都是相同的数。两个两位数的乘积中最大的回文数是 $9009=91*99$。 找到两个三位数乘积中最大的回文" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://Matrix-A.github.io/posts/euler/00003/" /><meta property="og:image" content="https://Matrix-A.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-07-02T14:58:04+08:00" />
-<meta property="article:modified_time" content="2023-08-06T00:00:11+08:00" /><meta property="og:site_name" content="Matrix-A" />
+<meta property="og:url" content="https://Matrix-A.github.io/posts/euler/00004/" /><meta property="og:image" content="https://Matrix-A.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-06T12:13:35+08:00" />
+<meta property="article:modified_time" content="2023-08-13T11:40:48+08:00" /><meta property="og:site_name" content="Matrix-A" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://Matrix-A.github.io/logo.png"/>
 
-<meta name="twitter:title" content="第3题: 最大质因数"/>
-<meta name="twitter:description" content="题目 最大素因数 $13195$ 的素因数是 $5,7,13$ 和 $29$。 那么 $600851475143$ 的最大素因数是多少？ Largest Prime Factor The prime factors of $13195$ are $5,7,13$ and $29$ . What is the largest prime factor of the number $600851475143$ ? 解题方法 试除法 已知正整数 $n=600851475143$"/>
+<meta name="twitter:title" content="第4题: 最大的回文乘积"/>
+<meta name="twitter:description" content="题目 最大的回文乘积 回文数就是正反两边读都是相同的数。两个两位数的乘积中最大的回文数是 $9009=91*99$。 找到两个三位数乘积中最大的回文"/>
 <meta name="application-name" content="我的网站">
 <meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Matrix-A.github.io/posts/euler/00003/" /><link rel="prev" href="https://Matrix-A.github.io/posts/euler/00002/" /><link rel="next" href="https://Matrix-A.github.io/posts/euler/00004/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Matrix-A.github.io/posts/euler/00004/" /><link rel="prev" href="https://Matrix-A.github.io/posts/euler/00003/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA="></noscript><link rel="preload" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc="></noscript><meta name="google-site-verification" content="PkkKdVq5celxWL218WkGLgPTE0LAfVs9KXO-aNjkJiA" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "第3题: 最大质因数",
+        "headline": "第4题: 最大的回文乘积",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/Matrix-A.github.io\/posts\/euler\/00003\/"
-        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 质数, 素数, 因数分解","wordcount":  347 ,
-        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00003\/","datePublished": "2023-07-02T14:58:04+08:00","dateModified": "2023-08-06T00:00:11+08:00","publisher": {
+            "@id": "https:\/\/Matrix-A.github.io\/posts\/euler\/00004\/"
+        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 回文数, 回文数乘积","wordcount":  589 ,
+        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00004\/","datePublished": "2023-08-06T12:13:35+08:00","dateModified": "2023-08-13T11:40:48+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -115,10 +115,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">第3题: 最大质因数</h1><h2 class="single-subtitle">Problem 3: Largest Prime Factor</h2><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">第4题: 最大的回文乘积</h1><h2 class="single-subtitle">Problem 4: Largest Palindrome Product</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Matrix-A</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>欧拉计划</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-07-02">2023-07-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 347 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-06">2023-08-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 589 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -128,31 +128,43 @@
   <ul>
     <li><a href="#题目">题目</a>
       <ul>
-        <li><a href="#最大素因数">最大素因数</a></li>
-        <li><a href="#largest-prime-factor">Largest Prime Factor</a></li>
+        <li><a href="#最大的回文乘积">最大的回文乘积</a></li>
+        <li><a href="#largest-palindrome-product">Largest Palindrome Product</a></li>
       </ul>
     </li>
     <li><a href="#解题方法">解题方法</a>
       <ul>
-        <li><a href="#试除法">试除法</a></li>
+        <li><a href="#分析">分析</a></li>
+        <li><a href="#思路">思路</a></li>
       </ul>
     </li>
     <li><a href="#参考代码">参考代码</a></li>
     <li><a href="#正确答案">正确答案</a></li>
-    <li><a href="#参考链接">参考链接</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="题目">题目</h1>
-<h2 id="最大素因数">最大素因数</h2>
-<p>$13195$ 的素因数是 $5,7,13$ 和 $29$。</p>
-<p>那么 $600851475143$ 的最大素因数是多少？</p>
-<h2 id="largest-prime-factor">Largest Prime Factor</h2>
-<p>The prime factors of $13195$ are $5,7,13$ and $29$ .</p>
-<p>What is the largest prime factor of the number $600851475143$ ?</p>
+<h2 id="最大的回文乘积">最大的回文乘积</h2>
+<p>回文数就是正反两边读都是相同的数。两个两位数的乘积中最大的回文数是 $9009=91*99$。</p>
+<p>找到两个三位数乘积中最大的回文数。</p>
+<h2 id="largest-palindrome-product">Largest Palindrome Product</h2>
+<p>A palindromic number reads the same both ways. The largest palindrome made from the product of two $2$-digit numbers is $9009=91*99$.</p>
+<p>Find the largest palindrome made from the product of two $3$-digit numbers.</p>
 <h1 id="解题方法">解题方法</h1>
-<h2 id="试除法">试除法</h2>
-<p>已知正整数 $n=600851475143$ ,则 $n$ 的素因数必然为小于等于 $\sqrt{n}$ 的素数。</p>
-<p>因此，可以使用「埃氏筛法」或者「欧拉筛法」筛选出小于 $\sqrt{n}$ 的素数，并在筛选时判断是否为 $n$ 的素因数。</p>
+<h2 id="分析">分析</h2>
+<p>假设回文数为 $&lsquo;abccba&rsquo;$，则有以下计算：</p>
+<p>$$
+\begin{aligned}
+&lsquo;abccba&rsquo;&amp;=100000a+10000b+1000c+100c+10b+a \\
+&amp;=100001a+10010b+1100c \\
+&amp;=11(9091a+910b+100c) \\
+\end{aligned}
+$$</p>
+<p>因此所求回文数必然存在一个三位数因数为 $11$ 的倍数。</p>
+<p>假设存在一个回文数 $z$ 为两个三位数的乘积，则最大的回文数乘积的三位数必然大于 $z/999$。</p>
+<p>两个三位数的乘积的最大值为 $999<em>999=998001$，最小值为 $100</em>100=10000$。因此所求的最大的回文数乘积必然为一个六位数或一个五位数。</p>
+<h2 id="思路">思路</h2>
+<p>实现一个六位数和五位数的回文数判断函数。</p>
+<p>从 $999$ 开始遍历 $x$ 和 $y$，下界为 $100$ 和 $z/999$。</p>
 <h1 id="参考代码">参考代码</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -191,46 +203,42 @@
 </span><span class="lnt">33
 </span><span class="lnt">34
 </span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;cstdio&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;format&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">prime_factor</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">sqrt</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">floor</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">sqrt</span><span class="p">(</span><span class="n">num</span><span class="p">)))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">};</span>
-</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="o">&gt;</span> <span class="n">result</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="o">&gt;</span> <span class="n">prime</span><span class="p">(</span><span class="n">sqrt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="o">&gt;</span> <span class="n">visit</span><span class="p">(</span><span class="n">sqrt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">sqrt</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">visit</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">prime</span><span class="p">[</span><span class="o">++</span><span class="n">prime</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 进行判断 
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">num</span> <span class="o">/=</span> <span class="n">i</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="n">result</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 输出结果
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">format</span><span class="p">(</span><span class="s">&#34;Project Euler 3 result: {}</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">*</span><span class="n">result</span><span class="p">.</span><span class="n">rbegin</span><span class="p">());</span>
-</span></span><span class="line"><span class="cl">                    <span class="k">return</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_palindrome_5_6</span><span class="p">(</span><span class="kt">int</span> <span class="n">z</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&gt;=</span> <span class="mi">100000</span> <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">999999</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">z</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">100000</span> 
+</span></span><span class="line"><span class="cl">            <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">10</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">10000</span> <span class="o">%</span> <span class="mi">10</span> 
+</span></span><span class="line"><span class="cl">            <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">100</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">%</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&gt;=</span> <span class="mi">10000</span> <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">99999</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">z</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">10000</span> 
+</span></span><span class="line"><span class="cl">            <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">10</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">%</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">palindrome_product</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// x 的下界
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">999</span><span class="p">;</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="n">l</span><span class="p">;</span> <span class="o">--</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">yi</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">11</span> <span class="o">?</span> <span class="mi">990</span> <span class="o">:</span> <span class="mi">999</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 若 x 不为 11 的倍数，则 y 必须为 11 的倍数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">yt</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">11</span> <span class="o">?</span> <span class="mi">11</span> <span class="o">:</span> <span class="mi">1</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="n">yi</span><span class="p">;</span> <span class="n">y</span> <span class="o">&gt;=</span> <span class="n">x</span><span class="p">;</span> <span class="n">y</span> <span class="o">-=</span> <span class="n">yt</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">auto</span> <span class="n">t</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">is_palindrome_5_6</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&gt;</span> <span class="n">t</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">result</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">l</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="mi">999</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">                <span class="p">}</span>
 </span></span><span class="line"><span class="cl">            <span class="p">}</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">prime</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">*</span> <span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">sqrt</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">visit</span><span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">constexpr</span> <span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">N</span><span class="p">{</span> <span class="mi">600851475143ll</span> <span class="p">};</span> <span class="c1">// sqrt(N) = 775146.0992245268
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">prime_factor</span><span class="p">(</span><span class="n">N</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -241,41 +249,33 @@
             <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>答案<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><strong>6857</strong></div>
+            <div class="admonition-content"><strong>906609</strong></div>
         </div>
     </div>
-</div>
-<h1 id="参考链接">参考链接</h1>
-<ul>
-<li><a href="https://zh.wikipedia.org/zh-cn/%E8%AF%95%E9%99%A4%E6%B3%95" target="_blank" rel="noopener noreffer ">维基百科 - 试除法</a></li>
-<li><a href="https://zh.wikipedia.org/zh-cn/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95" target="_blank" rel="noopener noreffer ">维基百科 - 埃拉托斯特尼筛法</a></li>
-<li><a href="https://oi.wiki/math/number-theory/sieve/" target="_blank" rel="noopener noreffer ">OI.Wiki - 素数筛法</a></li>
-</ul>
-</div><div class="post-footer" id="post-footer">
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-08-06</span>
+                <span>更新于 2023-08-13</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/posts/euler/00003/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/posts/euler/00004/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://Matrix-A.github.io/posts/euler/00003/" data-title="第3题: 最大质因数" data-hashtags="欧拉计划,第1-99题,质数,素数,因数分解"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://Matrix-A.github.io/posts/euler/00003/" data-hashtag="欧拉计划"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://Matrix-A.github.io/posts/euler/00003/" data-title="第3题: 最大质因数"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://Matrix-A.github.io/posts/euler/00003/" data-title="第3题: 最大质因数"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://Matrix-A.github.io/posts/euler/00003/" data-title="第3题: 最大质因数"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-title="第4题: 最大的回文乘积" data-hashtags="欧拉计划,第1-99题,回文数,回文数乘积"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-hashtag="欧拉计划"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-title="第4题: 最大的回文乘积"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-title="第4题: 最大的回文乘积"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-title="第4题: 最大的回文乘积"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/">欧拉计划</a>,&nbsp;<a href="/tags/%E7%AC%AC1-99%E9%A2%98/">第1-99题</a>,&nbsp;<a href="/tags/%E8%B4%A8%E6%95%B0/">质数</a>,&nbsp;<a href="/tags/%E7%B4%A0%E6%95%B0/">素数</a>,&nbsp;<a href="/tags/%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3/">因数分解</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/">欧拉计划</a>,&nbsp;<a href="/tags/%E7%AC%AC1-99%E9%A2%98/">第1-99题</a>,&nbsp;<a href="/tags/%E5%9B%9E%E6%96%87%E6%95%B0/">回文数</a>,&nbsp;<a href="/tags/%E5%9B%9E%E6%96%87%E6%95%B0%E4%B9%98%E7%A7%AF/">回文数乘积</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/euler/00002/" class="prev" rel="prev" title="第2题: 偶斐波那契数"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第2题: 偶斐波那契数</a>
-            <a href="/posts/euler/00004/" class="next" rel="next" title="第4题: 最大的回文乘积">第4题: 最大的回文乘积<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/euler/00003/" class="prev" rel="prev" title="第3题: 最大质因数"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第3题: 最大质因数</a></div>
 </div>
 </article></div>
             </main><footer class="footer">

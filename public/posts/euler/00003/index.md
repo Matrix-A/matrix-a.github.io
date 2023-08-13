@@ -46,7 +46,7 @@ void prime_factor(std::uint64_t num) {
                 num /= i;
                 result.push_back(i);
                 if (num == 1) { // 输出结果
-                    std::cout << std::format("Project Euler 2 result: {}\n", *result.rbegin());
+                    std::cout << std::format("Project Euler 3 result: {}\n", *result.rbegin());
                     return;
                 }
             }
