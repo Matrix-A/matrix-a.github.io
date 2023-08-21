@@ -3,7 +3,23 @@
         <title>所有文章 - Matrix-A</title>
         <link>https://Matrix-A.github.io/posts/</link>
         <description>所有文章 | Matrix-A</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 06 Aug 2023 12:13:35 &#43;0800</lastBuildDate><atom:link href="https://Matrix-A.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 21 Aug 2023 15:30:38 &#43;0800</lastBuildDate><atom:link href="https://Matrix-A.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>第6题：和平方与平方和的差</title>
+    <link>https://Matrix-A.github.io/posts/euler/00006/</link>
+    <pubDate>Mon, 21 Aug 2023 15:30:38 &#43;0800</pubDate>
+    <author>Matrix-A</author>
+    <guid>https://Matrix-A.github.io/posts/euler/00006/</guid>
+    <description><![CDATA[题目 和平方与平方和的差 前十个自然数的平方和为 $$ 1^2+2^2+\dots+10^2=385 $$ 前十个自然数的和平方为 $$ (1+2+\dots+10)^2=55^2=3025 $$ 因此前十个自然数的平方和与和平方的差为 $3025-385=26]]></description>
+</item>
+<item>
+    <title>第5题: 最小倍数</title>
+    <link>https://Matrix-A.github.io/posts/euler/00005/</link>
+    <pubDate>Mon, 21 Aug 2023 14:55:27 &#43;0800</pubDate>
+    <author>Matrix-A</author>
+    <guid>https://Matrix-A.github.io/posts/euler/00005/</guid>
+    <description><![CDATA[题目 最小倍数 $2520$ 是可以被 $1$ 至 $10$ 中的每一个数整除的最小数。 求能被 $1$ 至 $20$ 中的每一个数整除的最小正整数。 Smallest Multiple $2520$ is the smallest number that can be divided by each of the numbers from $1$ to $10$ without any]]></description>
+</item>
+<item>
     <title>第4题: 最大的回文乘积</title>
     <link>https://Matrix-A.github.io/posts/euler/00004/</link>
     <pubDate>Sun, 06 Aug 2023 12:13:35 &#43;0800</pubDate>

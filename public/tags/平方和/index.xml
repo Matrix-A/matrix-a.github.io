@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>平方和 - 标签 - Matrix-A</title>
+        <link>https://Matrix-A.github.io/tags/%E5%B9%B3%E6%96%B9%E5%92%8C/</link>
+        <description>平方和 - 标签 - Matrix-A</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 21 Aug 2023 15:30:38 &#43;0800</lastBuildDate><atom:link href="https://Matrix-A.github.io/tags/%E5%B9%B3%E6%96%B9%E5%92%8C/" rel="self" type="application/rss+xml" /><item>
+    <title>第6题：和平方与平方和的差</title>
+    <link>https://Matrix-A.github.io/posts/euler/00006/</link>
+    <pubDate>Mon, 21 Aug 2023 15:30:38 &#43;0800</pubDate>
+    <author>Matrix-A</author>
+    <guid>https://Matrix-A.github.io/posts/euler/00006/</guid>
+    <description><![CDATA[题目 和平方与平方和的差 前十个自然数的平方和为 $$ 1^2+2^2+\dots+10^2=385 $$ 前十个自然数的和平方为 $$ (1+2+\dots+10)^2=55^2=3025 $$ 因此前十个自然数的平方和与和平方的差为 $3025-385=26]]></description>
+</item>
+</channel>
+</rss>

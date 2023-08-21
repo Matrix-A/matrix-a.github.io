@@ -4,33 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>第4题: 最大的回文乘积 - Matrix-A</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="第4题: 最大的回文乘积" />
-<meta property="og:description" content="题目 最大的回文乘积 回文数就是正反两边读都是相同的数。两个两位数的乘积中最大的回文数是 $9009=91*99$。 找到两个三位数乘积中最大的回文" />
+        <title>第5题: 最小倍数 - Matrix-A</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="第5题: 最小倍数" />
+<meta property="og:description" content="题目 最小倍数 $2520$ 是可以被 $1$ 至 $10$ 中的每一个数整除的最小数。 求能被 $1$ 至 $20$ 中的每一个数整除的最小正整数。 Smallest Multiple $2520$ is the smallest number that can be divided by each of the numbers from $1$ to $10$ without any" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://Matrix-A.github.io/posts/euler/00004/" /><meta property="og:image" content="https://Matrix-A.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-06T12:13:35+08:00" />
-<meta property="article:modified_time" content="2023-08-13T11:40:48+08:00" /><meta property="og:site_name" content="Matrix-A" />
+<meta property="og:url" content="https://Matrix-A.github.io/posts/euler/00005/" /><meta property="og:image" content="https://Matrix-A.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-21T14:55:27+08:00" />
+<meta property="article:modified_time" content="2023-08-21T15:22:04+08:00" /><meta property="og:site_name" content="Matrix-A" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://Matrix-A.github.io/logo.png"/>
 
-<meta name="twitter:title" content="第4题: 最大的回文乘积"/>
-<meta name="twitter:description" content="题目 最大的回文乘积 回文数就是正反两边读都是相同的数。两个两位数的乘积中最大的回文数是 $9009=91*99$。 找到两个三位数乘积中最大的回文"/>
+<meta name="twitter:title" content="第5题: 最小倍数"/>
+<meta name="twitter:description" content="题目 最小倍数 $2520$ 是可以被 $1$ 至 $10$ 中的每一个数整除的最小数。 求能被 $1$ 至 $20$ 中的每一个数整除的最小正整数。 Smallest Multiple $2520$ is the smallest number that can be divided by each of the numbers from $1$ to $10$ without any"/>
 <meta name="application-name" content="我的网站">
 <meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Matrix-A.github.io/posts/euler/00004/" /><link rel="prev" href="https://Matrix-A.github.io/posts/euler/00003/" /><link rel="next" href="https://Matrix-A.github.io/posts/euler/00005/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Matrix-A.github.io/posts/euler/00005/" /><link rel="prev" href="https://Matrix-A.github.io/posts/euler/00004/" /><link rel="next" href="https://Matrix-A.github.io/posts/euler/00006/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA="></noscript><link rel="preload" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc="></noscript><meta name="google-site-verification" content="PkkKdVq5celxWL218WkGLgPTE0LAfVs9KXO-aNjkJiA" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "第4题: 最大的回文乘积",
+        "headline": "第5题: 最小倍数",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/Matrix-A.github.io\/posts\/euler\/00004\/"
-        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 回文数, 回文数乘积","wordcount":  589 ,
-        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00004\/","datePublished": "2023-08-06T12:13:35+08:00","dateModified": "2023-08-13T11:40:48+08:00","publisher": {
+            "@id": "https:\/\/Matrix-A.github.io\/posts\/euler\/00005\/"
+        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 素因数分解","wordcount":  243 ,
+        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00005\/","datePublished": "2023-08-21T14:55:27+08:00","dateModified": "2023-08-21T15:22:04+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -115,10 +115,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">第4题: 最大的回文乘积</h1><h2 class="single-subtitle">Problem 4: Largest Palindrome Product</h2><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">第5题: 最小倍数</h1><h2 class="single-subtitle">Problem 5: Smallest Multiple</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Matrix-A</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>欧拉计划</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-06">2023-08-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 589 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-21">2023-08-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 243 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -126,120 +126,280 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#题目">题目</a>
-      <ul>
-        <li><a href="#最大的回文乘积">最大的回文乘积</a></li>
-        <li><a href="#largest-palindrome-product">Largest Palindrome Product</a></li>
-      </ul>
-    </li>
-    <li><a href="#解题方法">解题方法</a>
-      <ul>
-        <li><a href="#分析">分析</a></li>
-        <li><a href="#思路">思路</a></li>
-      </ul>
-    </li>
+    <li><a href="#题目">题目</a></li>
+    <li><a href="#最小倍数">最小倍数</a></li>
+    <li><a href="#smallest-multiple">Smallest Multiple</a></li>
+    <li><a href="#解题方法">解题方法</a></li>
     <li><a href="#参考代码">参考代码</a></li>
     <li><a href="#正确答案">正确答案</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="题目">题目</h1>
-<h2 id="最大的回文乘积">最大的回文乘积</h2>
-<p>回文数就是正反两边读都是相同的数。两个两位数的乘积中最大的回文数是 $9009=91*99$。</p>
-<p>找到两个三位数乘积中最大的回文数。</p>
-<h2 id="largest-palindrome-product">Largest Palindrome Product</h2>
-<p>A palindromic number reads the same both ways. The largest palindrome made from the product of two $2$-digit numbers is $9009=91*99$.</p>
-<p>Find the largest palindrome made from the product of two $3$-digit numbers.</p>
+<h1 id="最小倍数">最小倍数</h1>
+<p>$2520$ 是可以被 $1$ 至 $10$ 中的每一个数整除的最小数。</p>
+<p>求能被 $1$ 至 $20$ 中的每一个数整除的最小正整数。</p>
+<h1 id="smallest-multiple">Smallest Multiple</h1>
+<p>$2520$ is the smallest number that can be divided by each of the numbers from $1$ to $10$ without any remainder.</p>
+<p>What is the smallest positive number that is evenly divisible by all of the numbers from $1$ to $20$?</p>
 <h1 id="解题方法">解题方法</h1>
-<h2 id="分析">分析</h2>
-<p>假设回文数为 $&lsquo;abccba&rsquo;$，则有以下计算：</p>
-<p>$$
-\begin{aligned}
-&lsquo;abccba&rsquo;&amp;=100000a+10000b+1000c+100c+10b+a \\
-&amp;=100001a+10010b+1100c \\
-&amp;=11(9091a+910b+100c) \\
-\end{aligned}
-$$</p>
-<p>因此所求回文数必然存在一个三位数因数为 $11$ 的倍数。</p>
-<p>假设存在一个回文数 $z$ 为两个三位数的乘积，则最大的回文数乘积的三位数必然大于 $z/999$。</p>
-<p>两个三位数的乘积的最大值为 $999<em>999=998001$，最小值为 $100</em>100=10000$。因此所求的最大的回文数乘积必然为一个六位数或一个五位数。</p>
-<h2 id="思路">思路</h2>
-<p>实现一个六位数和五位数的回文数判断函数。</p>
-<p>从 $999$ 开始遍历 $x$ 和 $y$，下界为 $100$ 和 $z/999$。</p>
+<p>显然，答案为 $1$ 至 $20$ 中的每一个数进行素因数分解后，取最大的次方并相乘。</p>
+<p>对 $1$ 至 $20$ 分解素因数见下表：</p>
+<table>
+<thead>
+<tr>
+<th>-</th>
+<th>2</th>
+<th>3</th>
+<th>5</th>
+<th>7</th>
+<th>11</th>
+<th>13</th>
+<th>17</th>
+<th>19</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>1</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>2</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>1</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>20</td>
+<td>2</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>最高次方</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>因此答案为 $ 2^{4} * 3^{2} * 7 * 11 * 13 * 17 * 19$</p>
 <h1 id="参考代码">参考代码</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_palindrome_5_6</span><span class="p">(</span><span class="kt">int</span> <span class="n">z</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&gt;=</span> <span class="mi">100000</span> <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">999999</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">z</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">100000</span> 
-</span></span><span class="line"><span class="cl">            <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">10</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">10000</span> <span class="o">%</span> <span class="mi">10</span> 
-</span></span><span class="line"><span class="cl">            <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">100</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">%</span> <span class="mi">10</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&gt;=</span> <span class="mi">10000</span> <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">99999</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">z</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">10000</span> 
-</span></span><span class="line"><span class="cl">            <span class="o">&amp;&amp;</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">10</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">z</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">%</span> <span class="mi">10</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">palindrome_product</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// x 的下界
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">999</span><span class="p">;</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="n">l</span><span class="p">;</span> <span class="o">--</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">yi</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">11</span> <span class="o">?</span> <span class="mi">990</span> <span class="o">:</span> <span class="mi">999</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// 若 x 不为 11 的倍数，则 y 必须为 11 的倍数
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">yt</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">11</span> <span class="o">?</span> <span class="mi">11</span> <span class="o">:</span> <span class="mi">1</span><span class="p">;</span> 
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="n">yi</span><span class="p">;</span> <span class="n">y</span> <span class="o">&gt;=</span> <span class="n">x</span><span class="p">;</span> <span class="n">y</span> <span class="o">-=</span> <span class="n">yt</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">auto</span> <span class="n">t</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">is_palindrome_5_6</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&gt;</span> <span class="n">t</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">result</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">l</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="mi">999</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="mi">5</span><span class="o">*</span><span class="mi">7</span><span class="o">*</span><span class="mi">11</span><span class="o">*</span><span class="mi">13</span><span class="o">*</span><span class="mi">17</span><span class="o">*</span><span class="mi">19</span><span class="p">;</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="hide">
@@ -249,34 +409,34 @@ $$</p>
             <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>答案<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><strong>906609</strong></div>
+            <div class="admonition-content"><strong>232792560</strong></div>
         </div>
     </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-08-13</span>
+                <span>更新于 2023-08-21</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/posts/euler/00004/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/posts/euler/00005/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-title="第4题: 最大的回文乘积" data-hashtags="欧拉计划,第1-99题,回文数,回文数乘积"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-hashtag="欧拉计划"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-title="第4题: 最大的回文乘积"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-title="第4题: 最大的回文乘积"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://Matrix-A.github.io/posts/euler/00004/" data-title="第4题: 最大的回文乘积"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://Matrix-A.github.io/posts/euler/00005/" data-title="第5题: 最小倍数" data-hashtags="欧拉计划,第1-99题,素因数分解"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://Matrix-A.github.io/posts/euler/00005/" data-hashtag="欧拉计划"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://Matrix-A.github.io/posts/euler/00005/" data-title="第5题: 最小倍数"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://Matrix-A.github.io/posts/euler/00005/" data-title="第5题: 最小倍数"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://Matrix-A.github.io/posts/euler/00005/" data-title="第5题: 最小倍数"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/">欧拉计划</a>,&nbsp;<a href="/tags/%E7%AC%AC1-99%E9%A2%98/">第1-99题</a>,&nbsp;<a href="/tags/%E5%9B%9E%E6%96%87%E6%95%B0/">回文数</a>,&nbsp;<a href="/tags/%E5%9B%9E%E6%96%87%E6%95%B0%E4%B9%98%E7%A7%AF/">回文数乘积</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/">欧拉计划</a>,&nbsp;<a href="/tags/%E7%AC%AC1-99%E9%A2%98/">第1-99题</a>,&nbsp;<a href="/tags/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3/">素因数分解</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/euler/00003/" class="prev" rel="prev" title="第3题: 最大质因数"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第3题: 最大质因数</a>
-            <a href="/posts/euler/00005/" class="next" rel="next" title="第5题: 最小倍数">第5题: 最小倍数<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/euler/00004/" class="prev" rel="prev" title="第4题: 最大的回文乘积"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第4题: 最大的回文乘积</a>
+            <a href="/posts/euler/00006/" class="next" rel="next" title="第6题：和平方与平方和的差">第6题：和平方与平方和的差<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">

@@ -1,0 +1,95 @@
+# 第6题：和平方与平方和的差
+
+
+# 题目
+
+# 和平方与平方和的差
+
+前十个自然数的平方和为
+
+$$
+1^2+2^2+\dots+10^2=385
+$$
+
+前十个自然数的和平方为
+
+$$
+(1+2+\dots+10)^2=55^2=3025
+$$
+
+因此前十个自然数的平方和与和平方的差为 $3025-385=2640$。
+
+求前一百个自然数的平方和与和平方的差。
+
+# Sum Square Difference
+
+The sum of the squares of the first ten natural numbers is,
+
+$$
+1^2+2^2+\dots+10^2=385
+$$
+
+The square of the sum of the first ten natural numbers is,
+
+$$
+(1+2+\dots+10)^2=55^2=3025
+$$
+
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is $3025-385=2640$.
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+# 解题方法
+
+## 弱智版
+
+直接循环暴力求解。不赘述。
+
+## 公式法
+
+平方和公式为：
+
+$$
+\sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{6}
+$$
+
+和平方的计算为：
+
+$$
+(\sum_{i=1}^{n}i)^2=[\frac{n(n+1)}{2}]^2
+$$
+
+则二者的差为
+
+$$
+\begin{aligned}
+(\sum_{i=1}^{n}i)^2-\sum_{i=1}^{n}i^2&=[\frac{n(n+1)}{2}]^2-\frac{n(n+1)(2n+1)}{6} \\\\
+&=n(n+1)[\frac{3n(n+1)-2(2n+1)}{12}] \\\\
+&=\frac{n(n+1)(n-1)(3n-2)}{12}
+\end{aligned}
+$$
+
+# 参考代码
+
+```c++
+auto result = 100*(100+1)*(100-1)*(3*100-2)/12;
+```
+
+<div class="hide">
+
+# 正确答案
+
+{{<admonition success 答案 true>}}
+
+**25164150**
+
+{{</admonition >}}
+
+</div>
+
+# 参考链接
+
+- [百度百科 - 平方和公式](https://baike.baidu.com/item/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F)
+- [知乎专栏 - 一个有趣的数列求和——自然数平方和](https://zhuanlan.zhihu.com/p/190236854)
+- [维基百科 - 和平方](https://zh.wikipedia.org/zh-hans/%E5%92%8C%E5%B9%B3%E6%96%B9)
+- [维基百科 - 平方#平方和](https://zh.wikipedia.org/wiki/%E5%B9%B3%E6%96%B9#%E5%B9%B3%E6%96%B9%E5%92%8C)
