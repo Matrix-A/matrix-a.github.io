@@ -4,33 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>第6题: 和平方与平方和的差 - Matrix-A</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="第6题: 和平方与平方和的差" />
-<meta property="og:description" content="题目 和平方与平方和的差 前十个自然数的平方和为 $$ 1^2&#43;2^2&#43;\dots&#43;10^2=385 $$ 前十个自然数的和平方为 $$ (1&#43;2&#43;\dots&#43;10)^2=55^2=3025 $$ 因此前十个自然数的平方和与和平方的差为 $3025-385=26" />
+        <title>第7题: 第 $10001$ 个素数 - Matrix-A</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="第7题: 第 $10001$ 个素数" />
+<meta property="og:description" content="题目 第 $10001$ 个素数 通过查看素数表的前 $6$ 个数字 $2,3,5,7,11$ 和 $13$ ，我们可以得知第 $6$ 个素数为 $13$ 。 第$10001$个素数是多少？ $10001$st Prime By listing the first six prime numbers: $2,3,5,7,11$, and $13$, we can see that the" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://Matrix-A.github.io/posts/euler/00006/" /><meta property="og:image" content="https://Matrix-A.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-21T15:30:38+08:00" />
-<meta property="article:modified_time" content="2023-08-24T20:58:16+08:00" /><meta property="og:site_name" content="Matrix-A" />
+<meta property="og:url" content="https://Matrix-A.github.io/posts/euler/00007/" /><meta property="og:image" content="https://Matrix-A.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-24T20:59:06+08:00" />
+<meta property="article:modified_time" content="2023-08-24T22:47:29+08:00" /><meta property="og:site_name" content="Matrix-A" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://Matrix-A.github.io/logo.png"/>
 
-<meta name="twitter:title" content="第6题: 和平方与平方和的差"/>
-<meta name="twitter:description" content="题目 和平方与平方和的差 前十个自然数的平方和为 $$ 1^2&#43;2^2&#43;\dots&#43;10^2=385 $$ 前十个自然数的和平方为 $$ (1&#43;2&#43;\dots&#43;10)^2=55^2=3025 $$ 因此前十个自然数的平方和与和平方的差为 $3025-385=26"/>
+<meta name="twitter:title" content="第7题: 第 $10001$ 个素数"/>
+<meta name="twitter:description" content="题目 第 $10001$ 个素数 通过查看素数表的前 $6$ 个数字 $2,3,5,7,11$ 和 $13$ ，我们可以得知第 $6$ 个素数为 $13$ 。 第$10001$个素数是多少？ $10001$st Prime By listing the first six prime numbers: $2,3,5,7,11$, and $13$, we can see that the"/>
 <meta name="application-name" content="我的网站">
 <meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Matrix-A.github.io/posts/euler/00006/" /><link rel="prev" href="https://Matrix-A.github.io/posts/euler/00005/" /><link rel="next" href="https://Matrix-A.github.io/posts/euler/00007/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Matrix-A.github.io/posts/euler/00007/" /><link rel="prev" href="https://Matrix-A.github.io/posts/euler/00006/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA="></noscript><link rel="preload" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc="></noscript><meta name="google-site-verification" content="PkkKdVq5celxWL218WkGLgPTE0LAfVs9KXO-aNjkJiA" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "第6题: 和平方与平方和的差",
+        "headline": "第7题: 第 $10001$ 个素数",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/Matrix-A.github.io\/posts\/euler\/00006\/"
-        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 平方和, 和平方","wordcount":  301 ,
-        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00006\/","datePublished": "2023-08-21T15:30:38+08:00","dateModified": "2023-08-24T20:58:16+08:00","publisher": {
+            "@id": "https:\/\/Matrix-A.github.io\/posts\/euler\/00007\/"
+        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 素数, 埃拉托斯特尼筛法, 埃氏筛法","wordcount":  412 ,
+        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00007\/","datePublished": "2023-08-24T20:59:06+08:00","dateModified": "2023-08-24T22:47:29+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -115,9 +115,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">第6题: 和平方与平方和的差</h1><h2 class="single-subtitle">Problem 6: Sum Square Difference</h2><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">第7题: 第 $10001$ 个素数</h1><h2 class="single-subtitle">Problem 7: $10001$st Prime</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Matrix-A</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>欧拉计划</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-21">2023-08-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 301 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-24">2023-08-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 412 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -126,13 +126,16 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#题目">题目</a></li>
-    <li><a href="#和平方与平方和的差">和平方与平方和的差</a></li>
-    <li><a href="#sum-square-difference">Sum Square Difference</a></li>
+    <li><a href="#题目">题目</a>
+      <ul>
+        <li><a href="#第-10001-个素数">第 $10001$ 个素数</a></li>
+        <li><a href="#10001st-prime">$10001$st Prime</a></li>
+      </ul>
+    </li>
     <li><a href="#解题方法">解题方法</a>
       <ul>
-        <li><a href="#弱智版">弱智版</a></li>
-        <li><a href="#公式法">公式法</a></li>
+        <li><a href="#查表">查表</a></li>
+        <li><a href="#筛法">筛法</a></li>
       </ul>
     </li>
     <li><a href="#参考代码">参考代码</a></li>
@@ -141,55 +144,73 @@
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="题目">题目</h1>
-<h1 id="和平方与平方和的差">和平方与平方和的差</h1>
-<p>前十个自然数的平方和为</p>
-<p>$$
-1^2+2^2+\dots+10^2=385
-$$</p>
-<p>前十个自然数的和平方为</p>
-<p>$$
-(1+2+\dots+10)^2=55^2=3025
-$$</p>
-<p>因此前十个自然数的平方和与和平方的差为 $3025-385=2640$。</p>
-<p>求前一百个自然数的平方和与和平方的差。</p>
-<h1 id="sum-square-difference">Sum Square Difference</h1>
-<p>The sum of the squares of the first ten natural numbers is,</p>
-<p>$$
-1^2+2^2+\dots+10^2=385
-$$</p>
-<p>The square of the sum of the first ten natural numbers is,</p>
-<p>$$
-(1+2+\dots+10)^2=55^2=3025
-$$</p>
-<p>Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is $3025-385=2640$.</p>
-<p>Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</p>
+<h2 id="第-10001-个素数">第 $10001$ 个素数</h2>
+<p>通过查看素数表的前 $6$ 个数字 $2,3,5,7,11$ 和 $13$ ，我们可以得知第 $6$ 个素数为 $13$ 。</p>
+<p>第$10001$个素数是多少？</p>
+<h2 id="10001st-prime">$10001$st Prime</h2>
+<p>By listing the first six prime numbers: $2,3,5,7,11$, and $13$, we can see that the $6$th prime is $13$.</p>
+<p>What is the $10001$st prime number?</p>
 <h1 id="解题方法">解题方法</h1>
-<h2 id="弱智版">弱智版</h2>
-<p>直接循环暴力求解。不赘述。</p>
-<h2 id="公式法">公式法</h2>
-<p>平方和公式为：</p>
-<p>$$
-\sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{6}
-$$</p>
-<p>和平方的计算为：</p>
-<p>$$
-(\sum_{i=1}^{n}i)^2=[\frac{n(n+1)}{2}]^2
-$$</p>
-<p>则二者的差为</p>
+<h2 id="查表">查表</h2>
+<p>直接通过网络上提供的素数表，查取第 $10001$ 个素数。</p>
+<p>如 <a href="https://t5k.org/nthprime/index.php#nth" target="_blank" rel="noopener noreffer ">The Nth Prime Page</a>。</p>
+<p>也可以通过询问 AI 得到第 $10001$ 个素数。</p>
+<h2 id="筛法">筛法</h2>
+<p>根据素数计数函数的近似值 $\pi(x)=\frac{x}{ln(x)}$，可以粗略估计需要的判断的自然数范围。</p>
 <p>$$
 \begin{aligned}
-(\sum_{i=1}^{n}i)^2-\sum_{i=1}^{n}i^2&amp;=[\frac{n(n+1)}{2}]^2-\frac{n(n+1)(2n+1)}{6} \\
-&amp;=n(n+1)[\frac{3n(n+1)-2(2n+1)}{12}] \\
-&amp;=\frac{n(n+1)(n-1)(3n+2)}{12}
+\pi(50000)&amp;=\frac{50000}{ln(50000)}\approx 4621.166782321471 \\
+\pi(100000)&amp;=\frac{100000}{ln(100000)}\approx 8685.889638065037 \\
+\pi(150000)&amp;=\frac{150000}{ln(150000)}\approx 12585.59191195029
 \end{aligned}
 $$</p>
+<p>考虑到 $\pi(x)$ 在大于 $10^5$ 时，存在小于 $10%$ 的误差，因此使用使用 $150000$ 作为筛法的上界。</p>
+<p>使用「埃氏筛法」或者「欧拉筛法」筛选出答案。</p>
 <h1 id="参考代码">参考代码</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span><span class="mi">100</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">100</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="mi">100</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">12</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">prime</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">constexpr</span> <span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">num</span><span class="p">{</span> <span class="mi">150000</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">sqrt</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">floor</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">sqrt</span><span class="p">(</span><span class="n">num</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="o">&gt;</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="o">&gt;</span> <span class="n">prime</span><span class="p">(</span><span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="o">&gt;</span> <span class="n">visit</span><span class="p">(</span><span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">num</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">visit</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">prime</span><span class="p">[</span><span class="o">++</span><span class="n">prime</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">prime</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">10001</span><span class="p">)</span> <span class="k">return</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">prime</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">*</span> <span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">sqrt</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">visit</span><span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="hide">
@@ -199,16 +220,16 @@ $$</p>
             <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>答案<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><strong>25164150</strong></div>
+            <div class="admonition-content"><strong>104743</strong></div>
         </div>
     </div>
 </div>
 <h1 id="参考链接">参考链接</h1>
 <ul>
-<li><a href="https://baike.baidu.com/item/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F" target="_blank" rel="noopener noreffer ">百度百科 - 平方和公式</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/190236854" target="_blank" rel="noopener noreffer ">知乎专栏 - 一个有趣的数列求和——自然数平方和</a></li>
-<li><a href="https://zh.wikipedia.org/zh-hans/%E5%92%8C%E5%B9%B3%E6%96%B9" target="_blank" rel="noopener noreffer ">维基百科 - 和平方</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E5%B9%B3%E6%96%B9#%E5%B9%B3%E6%96%B9%E5%92%8C" target="_blank" rel="noopener noreffer ">维基百科 - 平方#平方和</a></li>
+<li><a href="https://zh.wikipedia.org/zh-hans/%E7%B4%A0%E6%95%B0%E8%AE%A1%E6%95%B0%E5%87%BD%E6%95%B0" target="_blank" rel="noopener noreffer ">维基百科 - 素数计数函数</a></li>
+<li><a href="https://zh.wikipedia.org/zh-cn/%E8%AF%95%E9%99%A4%E6%B3%95" target="_blank" rel="noopener noreffer ">维基百科 - 试除法</a></li>
+<li><a href="https://zh.wikipedia.org/zh-cn/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95" target="_blank" rel="noopener noreffer ">维基百科 - 埃拉托斯特尼筛法</a></li>
+<li><a href="https://oi.wiki/math/number-theory/sieve/" target="_blank" rel="noopener noreffer ">OI.Wiki - 素数筛法</a></li>
 </ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -218,23 +239,22 @@ $$</p>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/posts/euler/00006/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/posts/euler/00007/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://Matrix-A.github.io/posts/euler/00006/" data-title="第6题: 和平方与平方和的差" data-hashtags="欧拉计划,第1-99题,平方和,和平方"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://Matrix-A.github.io/posts/euler/00006/" data-hashtag="欧拉计划"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://Matrix-A.github.io/posts/euler/00006/" data-title="第6题: 和平方与平方和的差"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://Matrix-A.github.io/posts/euler/00006/" data-title="第6题: 和平方与平方和的差"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://Matrix-A.github.io/posts/euler/00006/" data-title="第6题: 和平方与平方和的差"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-title="第7题: 第 $10001$ 个素数" data-hashtags="欧拉计划,第1-99题,素数,埃拉托斯特尼筛法,埃氏筛法"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-hashtag="欧拉计划"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-title="第7题: 第 $10001$ 个素数"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-title="第7题: 第 $10001$ 个素数"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-title="第7题: 第 $10001$ 个素数"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/">欧拉计划</a>,&nbsp;<a href="/tags/%E7%AC%AC1-99%E9%A2%98/">第1-99题</a>,&nbsp;<a href="/tags/%E5%B9%B3%E6%96%B9%E5%92%8C/">平方和</a>,&nbsp;<a href="/tags/%E5%92%8C%E5%B9%B3%E6%96%B9/">和平方</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/">欧拉计划</a>,&nbsp;<a href="/tags/%E7%AC%AC1-99%E9%A2%98/">第1-99题</a>,&nbsp;<a href="/tags/%E7%B4%A0%E6%95%B0/">素数</a>,&nbsp;<a href="/tags/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95/">埃拉托斯特尼筛法</a>,&nbsp;<a href="/tags/%E5%9F%83%E6%B0%8F%E7%AD%9B%E6%B3%95/">埃氏筛法</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/euler/00005/" class="prev" rel="prev" title="第5题: 最小倍数"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第5题: 最小倍数</a>
-            <a href="/posts/euler/00007/" class="next" rel="next" title="第7题: 第 $10001$ 个素数">第7题: 第 $10001$ 个素数<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/euler/00006/" class="prev" rel="prev" title="第6题: 和平方与平方和的差"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第6题: 和平方与平方和的差</a></div>
 </div>
 </article></div>
             </main><footer class="footer">
