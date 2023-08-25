@@ -58,7 +58,7 @@ $$
 
 # 参考代码
 
-```C++
+```cpp
 std::uint64_t even_fibonacci(std::uint64_t max) {
     std::uint64_t a{ 2 };
     std::uint64_t b{ 8 };

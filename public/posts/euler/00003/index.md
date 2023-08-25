@@ -25,14 +25,14 @@ What is the largest prime factor of the number $600851475143$ ?
 
 # 参考代码
 
-```C++
+```cpp
 #include <cstdio>
 #include <cmath>
 #include <iostream>
 #include <vector>
 #include <format>
 
-void prime_factor(std::uint64_t num) {
+std::uint64_t prime_factor(std::uint64_t num) {
     const std::uint64_t sqrt {
         static_cast<std::uint64_t>(std::floor(std::sqrt(num)))
     };
@@ -45,9 +45,8 @@ void prime_factor(std::uint64_t num) {
             while (num % i == 0) { // 进行判断 
                 num /= i;
                 result.push_back(i);
-                if (num == 1) { // 输出结果
-                    std::cout << std::format("Project Euler 3 result: {}\n", *result.rbegin());
-                    return;
+                if (num == 1) { 
+                    return *result.rbegin();
                 }
             }
         }
@@ -56,12 +55,12 @@ void prime_factor(std::uint64_t num) {
             if (i % prime[j] == 0) break;
         }
     }
-    return;
+    return UINT64_MAX;
 }
 
 int main() {
     constexpr std::uint64_t N{ 600851475143ll }; // sqrt(N) = 775146.0992245268
-    prime_factor(N);
+    std::cout << std::format("Project Euler 3 result: {}\n", prime_factor(N));
 }
 ```
 

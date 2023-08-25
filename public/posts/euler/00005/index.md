@@ -49,7 +49,7 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 # 参考代码
 
-```c++
+```cpp
 auto result = 2*2*2*2*3*3*5*7*11*13*17*19;
 ```
 
