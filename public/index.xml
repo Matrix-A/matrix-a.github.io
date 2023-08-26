@@ -3,9 +3,17 @@
         <title>Matrix-A</title>
         <link>https://Matrix-A.github.io/</link>
         <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 24 Aug 2023 20:59:06 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 24 Aug 2023 22:46:07 &#43;0800</lastBuildDate>
             <atom:link href="https://Matrix-A.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>第8题: 序列中的最大乘积</title>
+    <link>https://Matrix-A.github.io/posts/euler/00008/</link>
+    <pubDate>Thu, 24 Aug 2023 22:46:07 &#43;0800</pubDate>
+    <author>Matrix-A</author>
+    <guid>https://Matrix-A.github.io/posts/euler/00008/</guid>
+    <description><![CDATA[题目 序列中的最大乘积 在下面的 $1000$ 位数中，相邻四位数的最大乘积是 $9\ast9\ast8\ast9=5832$。 $$ 73167176531330624919225119674426574742355349194934 \\ 96983520312774506326239578318016984801869478851843 \\ 85861560789112949495459501737958331952853208805511 \\ 12540698747158523863050715693290963295227443043557 \\ 66896648950445244523161731856403098711121722383113 \\ 62229893423380308135336276614282806444486645238749 \\ 30358907296290491560440772390713810515859307960866 \\ 70172427121883998797908792274921901699720888093776]]></description>
+</item>
+<item>
     <title>第7题: 第 $10001$ 个素数</title>
     <link>https://Matrix-A.github.io/posts/euler/00007/</link>
     <pubDate>Thu, 24 Aug 2023 20:59:06 &#43;0800</pubDate>

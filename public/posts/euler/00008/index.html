@@ -4,33 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>第7题: 第 $10001$ 个素数 - Matrix-A</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="第7题: 第 $10001$ 个素数" />
-<meta property="og:description" content="题目 第 $10001$ 个素数 通过查看素数表的前 $6$ 个数字 $2,3,5,7,11$ 和 $13$ ，我们可以得知第 $6$ 个素数为 $13$ 。 第$10001$个素数是多少？ $10001$st Prime By listing the first six prime numbers: $2,3,5,7,11$, and $13$, we can see that the" />
+        <title>第8题: 序列中的最大乘积 - Matrix-A</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="第8题: 序列中的最大乘积" />
+<meta property="og:description" content="题目 序列中的最大乘积 在下面的 $1000$ 位数中，相邻四位数的最大乘积是 $9\ast9\ast8\ast9=5832$。 $$ 73167176531330624919225119674426574742355349194934 \\ 96983520312774506326239578318016984801869478851843 \\ 85861560789112949495459501737958331952853208805511 \\ 12540698747158523863050715693290963295227443043557 \\ 66896648950445244523161731856403098711121722383113 \\ 62229893423380308135336276614282806444486645238749 \\ 30358907296290491560440772390713810515859307960866 \\ 70172427121883998797908792274921901699720888093776" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://Matrix-A.github.io/posts/euler/00007/" /><meta property="og:image" content="https://Matrix-A.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-24T20:59:06+08:00" />
-<meta property="article:modified_time" content="2023-08-27T01:30:05+08:00" /><meta property="og:site_name" content="Matrix-A" />
+<meta property="og:url" content="https://Matrix-A.github.io/posts/euler/00008/" /><meta property="og:image" content="https://Matrix-A.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-24T22:46:07+08:00" />
+<meta property="article:modified_time" content="2023-08-27T01:26:31+08:00" /><meta property="og:site_name" content="Matrix-A" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://Matrix-A.github.io/logo.png"/>
 
-<meta name="twitter:title" content="第7题: 第 $10001$ 个素数"/>
-<meta name="twitter:description" content="题目 第 $10001$ 个素数 通过查看素数表的前 $6$ 个数字 $2,3,5,7,11$ 和 $13$ ，我们可以得知第 $6$ 个素数为 $13$ 。 第$10001$个素数是多少？ $10001$st Prime By listing the first six prime numbers: $2,3,5,7,11$, and $13$, we can see that the"/>
+<meta name="twitter:title" content="第8题: 序列中的最大乘积"/>
+<meta name="twitter:description" content="题目 序列中的最大乘积 在下面的 $1000$ 位数中，相邻四位数的最大乘积是 $9\ast9\ast8\ast9=5832$。 $$ 73167176531330624919225119674426574742355349194934 \\ 96983520312774506326239578318016984801869478851843 \\ 85861560789112949495459501737958331952853208805511 \\ 12540698747158523863050715693290963295227443043557 \\ 66896648950445244523161731856403098711121722383113 \\ 62229893423380308135336276614282806444486645238749 \\ 30358907296290491560440772390713810515859307960866 \\ 70172427121883998797908792274921901699720888093776"/>
 <meta name="application-name" content="我的网站">
 <meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Matrix-A.github.io/posts/euler/00007/" /><link rel="prev" href="https://Matrix-A.github.io/posts/euler/00006/" /><link rel="next" href="https://Matrix-A.github.io/posts/euler/00008/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Matrix-A.github.io/posts/euler/00008/" /><link rel="prev" href="https://Matrix-A.github.io/posts/euler/00007/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA="></noscript><link rel="preload" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc="></noscript><meta name="google-site-verification" content="PkkKdVq5celxWL218WkGLgPTE0LAfVs9KXO-aNjkJiA" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "第7题: 第 $10001$ 个素数",
+        "headline": "第8题: 序列中的最大乘积",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/Matrix-A.github.io\/posts\/euler\/00007\/"
-        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 素数, 埃拉托斯特尼筛法, 埃氏筛法","wordcount":  412 ,
-        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00007\/","datePublished": "2023-08-24T20:59:06+08:00","dateModified": "2023-08-27T01:30:05+08:00","publisher": {
+            "@id": "https:\/\/Matrix-A.github.io\/posts\/euler\/00008\/"
+        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 滑动窗口, C\u002b\u002b23","wordcount":  776 ,
+        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00008\/","datePublished": "2023-08-24T22:46:07+08:00","dateModified": "2023-08-27T01:26:31+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -115,10 +115,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">第7题: 第 $10001$ 个素数</h1><h2 class="single-subtitle">Problem 7: $10001$st Prime</h2><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">第8题: 序列中的最大乘积</h1><h2 class="single-subtitle">Problem 8: Largest Product in a Series</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Matrix-A</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>欧拉计划</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-24">2023-08-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 412 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-24">2023-08-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 776 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -128,45 +128,102 @@
   <ul>
     <li><a href="#题目">题目</a>
       <ul>
-        <li><a href="#第-10001-个素数">第 $10001$ 个素数</a></li>
-        <li><a href="#10001st-prime">$10001$st Prime</a></li>
+        <li><a href="#序列中的最大乘积">序列中的最大乘积</a></li>
+        <li><a href="#largest-product-in-a-series">Largest Product in a Series</a></li>
       </ul>
     </li>
-    <li><a href="#解题方法">解题方法</a>
-      <ul>
-        <li><a href="#查表">查表</a></li>
-        <li><a href="#筛法">筛法</a></li>
-      </ul>
-    </li>
+    <li><a href="#解题方法">解题方法</a></li>
     <li><a href="#参考代码">参考代码</a></li>
     <li><a href="#正确答案">正确答案</a></li>
-    <li><a href="#参考链接">参考链接</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="题目">题目</h1>
-<h2 id="第-10001-个素数">第 $10001$ 个素数</h2>
-<p>通过查看素数表的前 $6$ 个数字 $2,3,5,7,11$ 和 $13$ ，我们可以得知第 $6$ 个素数为 $13$ 。</p>
-<p>第$10001$个素数是多少？</p>
-<h2 id="10001st-prime">$10001$st Prime</h2>
-<p>By listing the first six prime numbers: $2,3,5,7,11$, and $13$, we can see that the $6$th prime is $13$.</p>
-<p>What is the $10001$st prime number?</p>
-<h1 id="解题方法">解题方法</h1>
-<h2 id="查表">查表</h2>
-<p>直接通过网络上提供的素数表，查取第 $10001$ 个素数。</p>
-<p>如 <a href="https://t5k.org/nthprime/index.php#nth" target="_blank" rel="noopener noreffer ">The Nth Prime Page</a>。</p>
-<p>也可以通过询问 AI 得到第 $10001$ 个素数。</p>
-<h2 id="筛法">筛法</h2>
-<p>根据素数计数函数的近似值 $\pi(x)=\frac{x}{ln(x)}$，可以粗略估计需要的判断的自然数范围。</p>
+<h2 id="序列中的最大乘积">序列中的最大乘积</h2>
+<p>在下面的 $1000$ 位数中，相邻四位数的最大乘积是 $9\ast9\ast8\ast9=5832$。</p>
 <p>$$
-\begin{aligned}
-\pi(50000)&amp;=\frac{50000}{ln(50000)}\approx 4621.166782321471 \\
-\pi(100000)&amp;=\frac{100000}{ln(100000)}\approx 8685.889638065037 \\
-\pi(150000)&amp;=\frac{150000}{ln(150000)}\approx 12585.59191195029
-\end{aligned}
+73167176531330624919225119674426574742355349194934 \\
+96983520312774506326239578318016984801869478851843 \\
+85861560789112949495459501737958331952853208805511 \\
+12540698747158523863050715693290963295227443043557 \\
+66896648950445244523161731856403098711121722383113 \\
+62229893423380308135336276614282806444486645238749 \\
+30358907296290491560440772390713810515859307960866 \\
+70172427121883998797908792274921901699720888093776 \\
+65727333001053367881220235421809751254540594752243 \\
+52584907711670556013604839586446706324415722155397 \\
+53697817977846174064955149290862569321978468622482 \\
+83972241375657056057490261407972968652414535100474 \\
+82166370484403199890008895243450658541227588666881 \\
+16427171479924442928230863465674813919123162824586 \\
+17866458359124566529476545682848912883142607690042 \\
+24219022671055626321111109370544217506941658960408 \\
+07198403850962455444362981230987879927244284909188 \\
+84580156166097919133875499200524063689912560717606 \\
+05886116467109405077541002256983155200055935729725 \\
+71636269561882670428252483600823257530420752963450 \\
 $$</p>
-<p>考虑到 $\pi(x)$ 在大于 $10^5$ 时，存在小于 $10\%$ 的误差，因此使用使用 $150000$ 作为筛法的上界。</p>
-<p>使用「埃氏筛法」或者「欧拉筛法」筛选出答案。</p>
+<p>从这 $1000$ 位数中，找到相邻的 $13$ 位数的乘积的最大值。</p>
+<h2 id="largest-product-in-a-series">Largest Product in a Series</h2>
+<p>The four adjacent digits in the $1000$-digit number that have the greatest product are $9\ast9\ast8\ast9=5832$.</p>
+<p>$$
+73167176531330624919225119674426574742355349194934 \\
+\vdots \\
+71636269561882670428252483600823257530420752963450 \\
+$$</p>
+<p>Find the thirteen adjacent digits in the $1000$-digit number that have the greatest product. What is the value of this product?</p>
+<h1 id="解题方法">解题方法</h1>
+<p>使用滑动窗口算法来解最大乘积。时间复杂度位 $O(N)$。</p>
+<p>观察题目可知窗口大小为 $13$ ，每次滑动为 $1$ 位，并且考虑到 $0$ 在乘法运算中的特殊性，每个窗口记录以下两个值：</p>
+<ul>
+<li>所有非 $0$ 位的乘积</li>
+<li>$0$ 的个数</li>
+</ul>
+<p>在窗口滑动时，可以根据上个窗口的记录值、当前窗口左边的数字和窗口结尾的数字求得当前窗口需要记录的值以及所有数字的乘积。</p>
+<div class="details admonition example open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ol fa-fw" aria-hidden="true"></i>详细解释<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>假设第 $n$ 位的数字为 $d_n$ ，则第 $n$ 个滑动窗口的各个数字为：</p>
+<p>$$
+\{d_n,d_{n+1},d_{n+2},\dots,d_{n+12}\}
+$$</p>
+<p>假设第 $n$ 个滑动窗口的所有数字的乘积为 $P_n$，所有非 $0$ 位的乘积为 $p_{n}$，$0$ 的个数为 $c_n$，则</p>
+<p>$$
+P_n=\begin{cases}
+p_{n} &amp; c_n = 0 \\
+0 &amp; c_n \not = 0 \\
+\end{cases}
+$$</p>
+<p>观察数据可知， $p_{n+1}$ ， $c_{n+1}$ 可以使用 $p_n$、$c_n$、$d_n$ 和 $d_{n+13}$ 的值来进行快速计算，如下：</p>
+<p>$$
+c_{n+1}=\begin{cases}
+c_{n} &amp; d_n = 0 \And d_{n+13} = 0 \\
+c_{n}+1 &amp; d_n \not = 0 \And d_{n+13} = 0 \\
+c_{n}-1 &amp; d_n = 0 \And d_{n+13} \not = 0 \\
+c_{n} &amp; d_n \not = 0 \And d_{n+13} \not = 0 \\
+\end{cases}
+$$
+$$
+p_{n+1}=\begin{cases}
+p_{n} &amp; d_n = 0 \And d_{n+13} = 0 \\
+p_{n} / d_n &amp; d_n \not = 0 \And d_{n+13} = 0 \\
+p_{n}\ast d_{n+13} &amp; d_n = 0 \And d_{n+13} \not = 0 \\
+p_{n} / d_n \ast d_{n+13} &amp; d_n \not = 0 \And d_{n+13} \not = 0 \\
+\end{cases}
+$$</p>
+</div>
+        </div>
+    </div>
 <h1 id="参考代码">参考代码</h1>
+<div class="details admonition tips open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>提示<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">代码中使用了 <strong>C++23</strong> 中的 <code>std::views::slide</code></div>
+        </div>
+    </div>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -189,27 +246,39 @@ $$</p>
 </span><span class="lnt">18
 </span><span class="lnt">19
 </span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">prime</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">constexpr</span> <span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">num</span><span class="p">{</span> <span class="mi">150000</span> <span class="p">};</span>
-</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">sqrt</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">floor</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">sqrt</span><span class="p">(</span><span class="n">num</span><span class="p">)))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">};</span>
-</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="o">&gt;</span> <span class="n">result</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="o">&gt;</span> <span class="n">prime</span><span class="p">(</span><span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="o">&gt;</span> <span class="n">visit</span><span class="p">(</span><span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">num</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">visit</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">prime</span><span class="p">[</span><span class="o">++</span><span class="n">prime</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">prime</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">10001</span><span class="p">)</span> <span class="k">return</span> <span class="n">i</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">Product</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">result</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">temp</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 所有非 0 位的乘积
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// 0 的个数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="nl">x</span> <span class="p">:</span> <span class="n">Num</span> <span class="o">|</span> <span class="n">std</span><span class="o">::</span><span class="n">views</span><span class="o">::</span><span class="n">slide</span><span class="p">(</span><span class="mi">13</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 计算第一个窗口的值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">temp</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="nl">y</span> <span class="p">:</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">temp</span> <span class="o">*=</span> <span class="n">y</span> <span class="o">==</span> <span class="sc">&#39;0&#39;</span> <span class="o">?</span> <span class="n">count</span><span class="o">++</span><span class="p">,</span> <span class="mi">1</span> <span class="o">:</span> <span class="n">y</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="n">result</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">prime</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">*</span> <span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">sqrt</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">visit</span><span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="p">{</span> <span class="c1">// 处理当前窗口的最后一个值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">temp</span> <span class="o">*=</span> <span class="o">*</span><span class="n">x</span><span class="p">.</span><span class="n">rbegin</span><span class="p">()</span> <span class="o">==</span> <span class="sc">&#39;0&#39;</span> <span class="o">?</span> <span class="n">count</span><span class="o">++</span><span class="p">,</span> <span class="mi">1</span> <span class="o">:</span> <span class="o">*</span><span class="n">x</span><span class="p">.</span><span class="n">rbegin</span><span class="p">()</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;</span> <span class="n">result</span> <span class="o">&amp;&amp;</span> <span class="n">count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">result</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 处理当前窗口的第一个值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">x</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span> <span class="o">!=</span> <span class="sc">&#39;0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">temp</span> <span class="o">/=</span> <span class="o">*</span><span class="n">x</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">            <span class="n">count</span><span class="o">--</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -220,17 +289,10 @@ $$</p>
             <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>答案<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><strong>104743</strong></div>
+            <div class="admonition-content"><strong>23514624000</strong></div>
         </div>
     </div>
 </div>
-<h1 id="参考链接">参考链接</h1>
-<ul>
-<li><a href="https://zh.wikipedia.org/zh-hans/%E7%B4%A0%E6%95%B0%E8%AE%A1%E6%95%B0%E5%87%BD%E6%95%B0" target="_blank" rel="noopener noreffer ">维基百科 - 素数计数函数</a></li>
-<li><a href="https://zh.wikipedia.org/zh-cn/%E8%AF%95%E9%99%A4%E6%B3%95" target="_blank" rel="noopener noreffer ">维基百科 - 试除法</a></li>
-<li><a href="https://zh.wikipedia.org/zh-cn/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95" target="_blank" rel="noopener noreffer ">维基百科 - 埃拉托斯特尼筛法</a></li>
-<li><a href="https://oi.wiki/math/number-theory/sieve/" target="_blank" rel="noopener noreffer ">OI.Wiki - 素数筛法</a></li>
-</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -239,23 +301,22 @@ $$</p>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/posts/euler/00007/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/posts/euler/00008/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-title="第7题: 第 $10001$ 个素数" data-hashtags="欧拉计划,第1-99题,素数,埃拉托斯特尼筛法,埃氏筛法"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-hashtag="欧拉计划"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-title="第7题: 第 $10001$ 个素数"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-title="第7题: 第 $10001$ 个素数"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://Matrix-A.github.io/posts/euler/00007/" data-title="第7题: 第 $10001$ 个素数"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://Matrix-A.github.io/posts/euler/00008/" data-title="第8题: 序列中的最大乘积" data-hashtags="欧拉计划,第1-99题,滑动窗口,C&#43;&#43;23"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://Matrix-A.github.io/posts/euler/00008/" data-hashtag="欧拉计划"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://Matrix-A.github.io/posts/euler/00008/" data-title="第8题: 序列中的最大乘积"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://Matrix-A.github.io/posts/euler/00008/" data-title="第8题: 序列中的最大乘积"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://Matrix-A.github.io/posts/euler/00008/" data-title="第8题: 序列中的最大乘积"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/">欧拉计划</a>,&nbsp;<a href="/tags/%E7%AC%AC1-99%E9%A2%98/">第1-99题</a>,&nbsp;<a href="/tags/%E7%B4%A0%E6%95%B0/">素数</a>,&nbsp;<a href="/tags/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95/">埃拉托斯特尼筛法</a>,&nbsp;<a href="/tags/%E5%9F%83%E6%B0%8F%E7%AD%9B%E6%B3%95/">埃氏筛法</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/">欧拉计划</a>,&nbsp;<a href="/tags/%E7%AC%AC1-99%E9%A2%98/">第1-99题</a>,&nbsp;<a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">滑动窗口</a>,&nbsp;<a href="/tags/c&#43;&#43;23/">C&#43;&#43;23</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/euler/00006/" class="prev" rel="prev" title="第6题: 和平方与平方和的差"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第6题: 和平方与平方和的差</a>
-            <a href="/posts/euler/00008/" class="next" rel="next" title="第8题: 序列中的最大乘积">第8题: 序列中的最大乘积<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/euler/00007/" class="prev" rel="prev" title="第7题: 第 $10001$ 个素数"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第7题: 第 $10001$ 个素数</a></div>
 </div>
 </article></div>
             </main><footer class="footer">

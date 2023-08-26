@@ -1,12 +1,5 @@
----
-title: "第8题: 序列中的最大乘积"
-subtitle: "Problem 8: Largest Product in a Series"
-date: 2023-08-24T22:46:07+08:00
-draft: false
+# 第8题: 序列中的最大乘积
 
-tags: ["欧拉计划", "第1-99题", "滑动窗口", "C++23"]
-categories: ["欧拉计划"]
----
 
 # 题目
 
@@ -150,3 +143,4 @@ std::int64_t Product() {
 {{</admonition >}}
 
 </div>
+
