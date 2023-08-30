@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://Matrix-A.github.io/posts/euler/00008/" /><meta property="og:image" content="https://Matrix-A.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-08-24T22:46:07+08:00" />
-<meta property="article:modified_time" content="2023-08-27T01:26:31+08:00" /><meta property="og:site_name" content="Matrix-A" />
+<meta property="article:modified_time" content="2023-08-30T21:41:33+08:00" /><meta property="og:site_name" content="Matrix-A" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://Matrix-A.github.io/logo.png"/>
 
@@ -29,8 +29,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/Matrix-A.github.io\/posts\/euler\/00008\/"
-        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 滑动窗口, C\u002b\u002b23","wordcount":  776 ,
-        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00008\/","datePublished": "2023-08-24T22:46:07+08:00","dateModified": "2023-08-27T01:26:31+08:00","publisher": {
+        },"genre": "posts","keywords": "欧拉计划, 第1-99题, 滑动窗口, C\u002b\u002b23","wordcount":  639 ,
+        "url": "https:\/\/Matrix-A.github.io\/posts\/euler\/00008\/","datePublished": "2023-08-24T22:46:07+08:00","dateModified": "2023-08-30T21:41:33+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -117,7 +117,7 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">第8题: 序列中的最大乘积</h1><h2 class="single-subtitle">Problem 8: Largest Product in a Series</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Matrix-A</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>欧拉计划</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-24">2023-08-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 776 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-24">2023-08-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 639 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -133,7 +133,7 @@
       </ul>
     </li>
     <li><a href="#解题方法">解题方法</a></li>
-    <li><a href="#参考代码">参考代码</a></li>
+    <li><a href="#基于-c23-的实现">基于 C++23 的实现</a></li>
     <li><a href="#正确答案">正确答案</a></li>
   </ul>
 </nav></div>
@@ -172,13 +172,53 @@ $$</p>
 $$</p>
 <p>Find the thirteen adjacent digits in the $1000$-digit number that have the greatest product. What is the value of this product?</p>
 <h1 id="解题方法">解题方法</h1>
-<p>使用滑动窗口算法来解最大乘积。时间复杂度位 $O(N)$。</p>
-<p>观察题目可知窗口大小为 $13$ ，每次滑动为 $1$ 位，并且考虑到 $0$ 在乘法运算中的特殊性，每个窗口记录以下两个值：</p>
-<ul>
-<li>所有非 $0$ 位的乘积</li>
-<li>$0$ 的个数</li>
-</ul>
-<p>在窗口滑动时，可以根据上个窗口的记录值、当前窗口左边的数字和窗口结尾的数字求得当前窗口需要记录的值以及所有数字的乘积。</p>
+<p>使用滑动窗口算法来解最大乘积。时间复杂度为 $O(N)$。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">Product</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string_view</span><span class="o">&amp;</span> <span class="n">Num</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">size_t</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">temp</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">+</span> <span class="n">size</span> <span class="o">&lt;=</span> <span class="n">Num</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">temp</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">size_t</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">temp</span> <span class="o">*=</span> <span class="n">Num</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">result</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><!-- 
+# 优化
+
+观察题目可知窗口大小为 $13$ ，每次滑动为 $1$ 位，并且考虑到 $0$ 在乘法运算中的特殊性，每个窗口记录以下两个值：
+
+- 所有非 $0$ 位的乘积
+- $0$ 的个数
+
+在窗口滑动时，可以根据上个窗口的记录值、当前窗口左边的数字和窗口结尾的数字求得当前窗口需要记录的值以及所有数字的乘积。
+
+该优化的本质上是使用使用一次除法运算替换多次乘法运算。
+
 <div class="details admonition example open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-list-ol fa-fw" aria-hidden="true"></i>详细解释<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
@@ -215,15 +255,46 @@ $$</p>
 </div>
         </div>
     </div>
-<h1 id="参考代码">参考代码</h1>
-<div class="details admonition tips open">
+
+<div class="details admonition note open">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>提示<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>注意<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">代码中使用了 <strong>C++23</strong> 中的 <code>std::views::slide</code></div>
+            <div class="admonition-content">这种优化方法并不适用与该题目，原因为除法运算相较于乘法运算的开销较大（约为2-10倍）。</div>
         </div>
-    </div>
+    </div> 
+
+
+```cpp
+std::uint64_t Product(const std::string_view& Num, std::size_t size) {
+    std::uint64_t result = 0;
+    std::uint64_t temp = 1; // 所有非 0 位的乘积
+    std::uint32_t count = 0; // 0 的个数
+    for (std::size_t i = 0; i + size <= Num.size(); ++i) {
+        if (i == 0) { // 计算第一个窗口的值
+            for (std::size_t j = 0; j < size; ++j) {
+                temp *= Num[i + j] == '0' ? count++, 1 : Num[i + j] - '0';
+            }
+            if (count == 0) result = temp;
+        }
+        else { // 处理当前窗口的最后一个值
+            temp *= Num[i + size - 1] == '0' ? count++, 1 : Num[i + size - 1] - '0';
+            if (temp > result && count == 0) {
+                result = temp;
+            }
+        }
+        if (Num[i] != '0')
+            temp /= Num[i] - '0';
+        else
+            count--;
+    }
+    return result;
+}
+```
+-->
+<h1 id="基于-c23-的实现">基于 C++23 的实现</h1>
+<p>滑动窗口可以考虑使用C++23中的<code>std::views::slide</code>，遍历可以考虑使用并行版本的<code>std::for_each</code>，求积可以使用<code>std::accumulate</code>或者<code>std::reduce</code>，并行运算结果可以使用<code>std::atomic</code>记录。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -244,45 +315,39 @@ $$</p>
 </span><span class="lnt">16
 </span><span class="lnt">17
 </span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">Product</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">result</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span> <span class="n">temp</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 所有非 0 位的乘积
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// 0 的个数
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="nl">x</span> <span class="p">:</span> <span class="n">Num</span> <span class="o">|</span> <span class="n">std</span><span class="o">::</span><span class="n">views</span><span class="o">::</span><span class="n">slide</span><span class="p">(</span><span class="mi">13</span><span class="p">))</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 计算第一个窗口的值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">temp</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="nl">y</span> <span class="p">:</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">temp</span> <span class="o">*=</span> <span class="n">y</span> <span class="o">==</span> <span class="sc">&#39;0&#39;</span> <span class="o">?</span> <span class="n">count</span><span class="o">++</span><span class="p">,</span> <span class="mi">1</span> <span class="o">:</span> <span class="n">y</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="n">result</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="p">{</span> <span class="c1">// 处理当前窗口的最后一个值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">temp</span> <span class="o">*=</span> <span class="o">*</span><span class="n">x</span><span class="p">.</span><span class="n">rbegin</span><span class="p">()</span> <span class="o">==</span> <span class="sc">&#39;0&#39;</span> <span class="o">?</span> <span class="n">count</span><span class="o">++</span><span class="p">,</span> <span class="mi">1</span> <span class="o">:</span> <span class="o">*</span><span class="n">x</span><span class="p">.</span><span class="n">rbegin</span><span class="p">()</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;</span> <span class="n">result</span> <span class="o">&amp;&amp;</span> <span class="n">count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">result</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">Product</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string_view</span><span class="o">&amp;</span> <span class="n">Num</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">size_t</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">atomic</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="o">&gt;</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="k">auto</span><span class="o">&amp;</span> <span class="n">windows</span> <span class="o">=</span> <span class="n">Num</span> <span class="o">|</span> <span class="n">std</span><span class="o">::</span><span class="n">views</span><span class="o">::</span><span class="n">slide</span><span class="p">(</span><span class="n">size</span><span class="p">);</span> <span class="c1">// 生成滑块
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">std</span><span class="o">::</span><span class="n">for_each</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">execution</span><span class="o">::</span><span class="n">par_unseq</span><span class="p">,</span> <span class="n">windows</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">windows</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="p">[</span><span class="o">&amp;</span><span class="n">result</span><span class="p">](</span><span class="n">std</span><span class="o">::</span><span class="n">ranges</span><span class="o">::</span><span class="n">viewable_range</span> <span class="k">auto</span><span class="o">&amp;&amp;</span> <span class="n">window</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 因为大量的调用 std::reduce，因此仅使用「向量化」执行策略，不使用「并行化」执行策略
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">product</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">reduce</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">execution</span><span class="o">::</span><span class="n">unseq</span><span class="p">,</span> <span class="n">window</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">window</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="mi">1llu</span><span class="p">,</span> <span class="p">[](</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="o">&amp;</span> <span class="n">p</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">&amp;</span> <span class="n">c</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">p</span> <span class="o">*</span> <span class="p">(</span><span class="n">c</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">});</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span> <span class="n">old</span> <span class="o">=</span> <span class="n">result</span><span class="p">.</span><span class="n">load</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">old</span> <span class="o">&gt;=</span> <span class="n">product</span> <span class="o">||</span> <span class="n">result</span><span class="p">.</span><span class="n">compare_exchange_weak</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">product</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">break</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">            <span class="p">}</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// 处理当前窗口的第一个值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">x</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span> <span class="o">!=</span> <span class="sc">&#39;0&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="n">temp</span> <span class="o">/=</span> <span class="o">*</span><span class="n">x</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">else</span>
-</span></span><span class="line"><span class="cl">            <span class="n">count</span><span class="o">--</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><div class="hide">
+</div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>注意<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>上述实现在数据量较小时，速度较慢，主要开销在于并行实现的线程创建和销毁上。</p>
+<p>在数据量较大时，速度较快。实测可以在数据长度超过$10000000$时，达到基础实现的$5$倍以上。</p>
+</div>
+        </div>
+    </div>
+<div class="hide">
 <h1 id="正确答案">正确答案</h1>
 <div class="details admonition success open">
         <div class="details-summary admonition-title">
@@ -297,7 +362,7 @@ $$</p>
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-08-27</span>
+                <span>更新于 2023-08-30</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
