@@ -750,7 +750,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       unsafe = true
   # 目录设置
   [markup.tableOfContents]
-    startLevel = 1
+    startLevel = 2
     endLevel = 6
 
 # 作者配置
