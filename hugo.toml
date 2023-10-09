@@ -600,7 +600,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   #  不蒜子统计
   [params.ibruce]
-    enable = false
+    enable = true
     # 在文章中开启
     enablePost = false
 
