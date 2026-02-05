@@ -15,7 +15,7 @@ title = "Matrix-A"
 # 根目录的主机名（和路径）
 baseURL = "http://localhost:1313"
 # 主题列表
-# theme = ["FixIt"] # 在站点配置文件中启用
+theme = ["FixIt"] # 在站点配置文件中启用
 # 默认内容语言 ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "zh-cn"
 # 语言代码 ["en", "zh-CN", "fr", "pl", ...]
@@ -84,7 +84,7 @@ quality = 75
       # 是否设置为草稿菜单项，功能类似于草稿文章/页面
       draft = false
       # FixIt 0.2.16 | 新增 为特定菜单项添加 fontawesome 图标
-      icon = "fa-solid fa-archive"
+      icon = "fa-solid fa-user"
       # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
       type = ""
       # FixIt 0.3.9 | 新增 是否显示子菜单项分隔线
@@ -97,6 +97,17 @@ quality = 75
     name = "所有文章"
     url = "/posts/"
     title = ""
+    [menus.main.params]
+      # 为特定菜单项添加 CSS 类
+      class = ""
+      # 是否设置为草稿菜单项，功能类似于草稿文章/页面
+      draft = false
+      # FixIt 0.2.16 | 新增 为特定菜单项添加 fontawesome 图标
+      icon = "fa-solid fa-file-lines"
+      # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+      type = ""
+      # FixIt 0.3.9 | 新增 是否显示子菜单项分隔线
+      divided = false
   [[menus.main]]
     weight = 3
     identifier = "archives"
@@ -105,6 +116,17 @@ quality = 75
     name = "欧拉计划"
     url = "/categories/欧拉计划/"
     title = ""
+    [menus.main.params]
+      # 为特定菜单项添加 CSS 类
+      class = ""
+      # 是否设置为草稿菜单项，功能类似于草稿文章/页面
+      draft = false
+      # FixIt 0.2.16 | 新增 为特定菜单项添加 fontawesome 图标
+      icon = "fa-solid fa-calculator"
+      # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+      type = ""
+      # FixIt 0.3.9 | 新增 是否显示子菜单项分隔线
+      divided = false
   [[menus.main]]
     weight = 4
     identifier = "tags"
@@ -113,6 +135,17 @@ quality = 75
     name = "标签"
     url = "/tags/"
     title = ""
+    [menus.main.params]
+      # 为特定菜单项添加 CSS 类
+      class = ""
+      # 是否设置为草稿菜单项，功能类似于草稿文章/页面
+      draft = false
+      # FixIt 0.2.16 | 新增 为特定菜单项添加 fontawesome 图标
+      icon = "fa-solid fa-tags"
+      # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+      type = ""
+      # FixIt 0.3.9 | 新增 是否显示子菜单项分隔线
+      divided = false
   [[menus.main]]
     weight = 5
     identifier = "categories"
@@ -121,6 +154,17 @@ quality = 75
     name = "分类"
     url = "/categories/"
     title = ""
+    [menus.main.params]
+      # 为特定菜单项添加 CSS 类
+      class = ""
+      # 是否设置为草稿菜单项，功能类似于草稿文章/页面
+      draft = false
+      # FixIt 0.2.16 | 新增 为特定菜单项添加 fontawesome 图标
+      icon = "fa-solid fa-folder"
+      # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+      type = ""
+      # FixIt 0.3.9 | 新增 是否显示子菜单项分隔线
+      divided = false
   [[menus.main]]
     weight = 6
     identifier = "euler"
@@ -129,6 +173,17 @@ quality = 75
     name = "Project Euler 官网"
     url = "https://projecteuler.net/"
     title = "欧拉计划官网"
+    [menus.main.params]
+      # 为特定菜单项添加 CSS 类
+      class = ""
+      # 是否设置为草稿菜单项，功能类似于草稿文章/页面
+      draft = false
+      # FixIt 0.2.16 | 新增 为特定菜单项添加 fontawesome 图标
+      icon = ""
+      # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+      type = ""
+      # FixIt 0.3.9 | 新增 是否显示子菜单项分隔线
+      divided = false
 
 # -------------------------------------------------------------------------------------
 # 相关文章配置
@@ -467,10 +522,6 @@ enableTranslationMerge = false
 # FixIt 0.2.14 | 新增 默认情况下，FixIt 仅在首页的 HTML 头中注入主题元标签。
 # 您可以关闭它，但我们非常感谢您不要关闭，因为这是观察 FixIt 受欢迎程度上升的好方法。
 disableThemeInject = true
-# 额外的 js 脚本
-custom_js = [
-  "libs/konami-js.1.6.3/konami.js"
-]
 
 # 作者配置
 [params.author]
@@ -874,7 +925,7 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
   # FixIt 0.3.13 | 新增 自定义警告框配置
   # 参考 https://fixit.lruihao.cn/documentation/content-management/shortcodes/extended/admonition/#custom-admonitions
   # 语法：<type> = <icon>
-  [params.admonition]
+  #[params.admonition]
   # ban = "fa-solid fa-ban"
 
   # FixIt 0.3.14 | 新增 自定义任务列表配置
@@ -892,9 +943,9 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
 
   # FixIt 0.2.12 | 新增 PanguJS 配置
   [params.pangu]
-  # 用于中文排版
-  enable = false
-  selector = "article" # FixIt 0.2.17 | 新增
+    # 用于中文排版
+    enable = true
+    selector = "article" # FixIt 0.2.17 | 新增
 
   # FixIt 0.2.12 | 新增 水印配置
   # 详细配置参考 https://github.com/Lruihao/watermark#readme
@@ -921,24 +972,24 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
 
   # FixIt 0.3.10 | 新增 不蒜子计数
   [params.busuanzi]
-  # 是否启用不蒜子计数
-  enable = false
-  # 不蒜子计数核心脚本源。默认值为 https://vercount.one/js
-  source = "https://vercount.one/js"
-  # 是否显示站点访问量
-  siteViews = true
-  # 是否显示页面访问量
-  pageViews = true
+    # 是否启用不蒜子计数
+    enable = true
+    # 不蒜子计数核心脚本源。默认值为 https://vercount.one/js
+    source = "https://vercount.one/js"
+    # 是否显示站点访问量
+    siteViews = true
+    # 是否显示页面访问量
+    pageViews = true
 
   # 站点验证代码配置，用于 Google/Bing/Yandex/Pinterest/Baidu/360/Sogou
   [params.verification]
-  google = ""
-  bing = ""
-  yandex = ""
-  pinterest = ""
-  baidu = ""
-  so = ""
-  sogou = ""
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
+    so = ""
+    sogou = ""
 
   # 站点 SEO 配置
   [params.seo]
@@ -1387,7 +1438,7 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
     # 可以在数学公式中出现的 HTML 标签
     [params.page.math.mathjax.options.includeHtmlTags]
     # "#comment" = ""
-    # br = "\n"
+    br = "\n"
     # wbr = ""
 
     # Mapbox GL JS 配置 (https://docs.mapbox.com/mapbox-gl-js)
@@ -1629,16 +1680,13 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
     [params.page.library]
 
     [params.page.library.css]
-    # someCSS = "some.css"
-    # 位于 "assets/" 目录
-    # 或者
-    # someCSS = "https://cdn.example.com/some.css"
+      all = "css/all.css"
 
     [params.page.library.js]
-    # someJavascript = "some.js"
-    # 位于 "assets/" 目录
-    # 或者
-    # someJavascript = "https://cdn.example.com/some.js"
+      konami = "js/konami.js"
+      all = "js/all.js"
+      # 或者
+      # someJavascript = "https://cdn.example.com/some.js"
 
     # 页面 SEO 配置
     [params.page.seo]
