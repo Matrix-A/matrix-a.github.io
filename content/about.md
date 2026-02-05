@@ -16,13 +16,13 @@ description: "Matrix-A 的个人介绍"
 
 输入作弊码「⬆️⬆️⬇️⬇️⬅️➡️⬅️➡️🅱️🅰️」查看答案及其它隐藏内容。
 
-{{< admonition type=tip title="提示" open=true >}}
+{{< admonition tip title="提示" open=true >}}
 在手机端，「⬆️⬇️⬅️➡️」为滑动屏幕，「🅱️🅰️」为点击屏幕。
 {{< /admonition >}}
 
 <div class="hide">
 
-{{< admonition success 彩蛋 true >}}
+{{< admonition success title="彩蛋" open=true >}}
 好耶！(๑•̀ㅂ•́)و✧
 {{< /admonition >}}
 
