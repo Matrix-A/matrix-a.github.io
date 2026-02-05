@@ -548,7 +548,7 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
   # 是否省略 favicon 资源链接
   noFavicon = false
   # 现代 SVG favicon，用于替换旧的 .png 和 .ico 文件
-  svgFavicon = ""
+  svgFavicon = "/favicon.svg"
   # Safari 口罩图标颜色
   iconColor = "#5bbad5"
   # Windows v8-10 磁贴颜色
