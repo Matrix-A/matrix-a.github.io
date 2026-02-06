@@ -563,7 +563,7 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
 [params.search]
   enable = true
   # 搜索引擎类型 ["algolia", "fuse", "cse", "post-chat"]
-  type = "lunr"
+  type = "fuse"
   # 分块内容的最大索引长度
   contentLength = 4000
   # 搜索栏占位符
